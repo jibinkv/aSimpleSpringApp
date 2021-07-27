@@ -8,7 +8,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(MockitoExtension.class)
-class StringManipulatorTest {
+public class StringManipulatorTest {
 
     @InjectMocks
     private StringManipulator stringManipulator;
