@@ -46,4 +46,16 @@ public class MiscellaneousServicesTest {
         verify(stringManipulatorMock).reverseString(givenString);
         assertThat(actualString).isEqualTo(expectedString);
     }
+
+    @Test
+    void should_get_first_duplicate_from_list() {
+        //Arrange
+        int[] givenArray = new int[]{2,3,6,5,10,14,15,5};
+
+        //Act
+        int firstDuplicate = miscellaneousServicesMock.retrieveFirstDuplicate(givenArray);
+
+        //Assert
+        assertThat(firstDuplicate).isEqualTo(5);
+    }
 }
